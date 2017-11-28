@@ -1,0 +1,2 @@
+*** Variables ***
+${loginAsUserGuestButton}    id=userGuest

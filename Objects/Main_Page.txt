@@ -1,0 +1,4 @@
+*** Variables ***
+${demoLogin}      user@phptravels.com
+${demoPassword}    demouser
+${openFlightsPageButton}    xpath=//*[@id="body-section"]/div[5]/table/tbody/tr[1]/td/div/div[2]/div/button
