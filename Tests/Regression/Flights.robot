@@ -9,8 +9,7 @@ Resource          ../../Settings/Browser_Settings.txt
 
 *** Test Cases ***
 1_flight_rezervation
-    Click Link    http://www.phptravels.net/flight
-    Title Should Be    Flights List
+    Open Flights List Page
     Click Button    ${bookFlightNowButton}
     Page Should Contain    Booking Options
     Wait Until Element Is Visible    ${loginAsUserGuestButton}
@@ -21,6 +20,11 @@ Resource          ../../Settings/Browser_Settings.txt
     Page Should Contain Button    ${confirmBookingButton}
     Click Element    ${confirmBookingButton}
     Title Should Be    Flights List
-    Input Text    ${enterEmailTextField}    ${demoPassword}
+    Input Text    ${enterEmailTextField}    ${demoLogin}
     Click Element    ${confirmBookingButton}
     Wait Until Page Contains    Your Booking is Confirmed    100
+
+2_flight_rezervation
+    Open Flights List Page
+    Click Button    //*[@id="body-section"]/div[2]/div/div/div[4]/div/a/i
+    Wait Until Page Contains    Search
