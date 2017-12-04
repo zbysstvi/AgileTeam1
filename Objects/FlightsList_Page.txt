@@ -2,3 +2,4 @@
 ${loginAsUserGuestButton}    id=userGuest
 ${confirmBookingButton}    id=confirmBooking
 ${enterEmailTextField}    id=email
+${modifySearchButton}    xpath=//span[text()="Modify"]
