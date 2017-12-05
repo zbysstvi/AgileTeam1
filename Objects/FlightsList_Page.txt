@@ -3,3 +3,8 @@ ${loginAsUserGuestButton}    id=userGuest
 ${confirmBookingButton}    id=confirmBooking
 ${enterEmailTextField}    id=email
 ${modifySearchButton}    xpath=//span[text()="Modify"]
+${originFlightField}    xpath=//*[@id="s2id_autogen1"]
+${activeSetFlightField}    xpath=//*[@id="select2-drop"]/div/input
+${firstResultFlightField}    xpath=//*[@id="select2-drop"]/ul/li/div
+$(destinationFlightField)    xpath=//*[@id="s2id_autogen3"]
+${searchFlightButton}    xpath=//*[@id="modify"]/div[1]/div/form/div[3]/div[4]/button

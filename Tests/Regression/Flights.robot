@@ -28,15 +28,8 @@ Resource          ../../Settings/Browser_Settings.txt
     Open Flights List Page
     Click Element    ${modifySearchButton}
     Wait Until Page Contains    Search
-    Click Element    //*[@id="s2id_autogen1"]
-    Input Text    //*[@id="select2-drop"]/div/input    PRG
-    Wait Until Element Is Visible    //*[@id="select2-drop"]/ul/li/div
-    Click Element    //*[@id="select2-drop"]/ul/li/div
-    Click Element    //*[@id="s2id_autogen3"]
-    Input Text    //*[@id="select2-drop"]/div/input    MUC
-    Wait Until Element Is Visible    //*[@id="select2-drop"]/ul/li/div
-    Click Element    //*[@id="select2-drop"]/ul/li/div
-    Click Element    //*[@id="modify"]/div[1]/div/form/div[3]/div[4]/button
+    Fill Search For Flight FlightsPage    ${flightOrigin}    ${flightDestination}
+    Click Element    ${searchFlightButton}
     Click Button    ${bookFlightNowButton}
     Page Should Contain    Booking Options
     Wait Until Element Is Visible    ${loginAsUserGuestButton}

@@ -10,3 +10,14 @@ Prepare Browser
 Open Flights List Page
     Click Link    http://www.phptravels.net/flight
     Title Should Be    Flights List
+
+Fill Search For Flight FlightsPage
+    [Arguments]    ${flightOrigin}    ${flightDestination}
+    Click Element    ${originFlightField}
+    Input Text    ${activeSetFlightField}    ${flightOrigin}
+    Wait Until Element Is Visible    ${firstResultFlightField}
+    Click Element    ${firstResultFlightField}
+    Click Element    $(destinationFlightField)
+    Input Text    ${activeSetFlightField}    ${flightDestination}
+    Wait Until Element Is Visible    ${firstResultFlightField}
+    Click Element    ${firstResultFlightField}

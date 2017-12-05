@@ -1,3 +1,5 @@
 *** Variables ***
 ${url}            http://www.phptravels.net/
 ${browser}        chrome
+${flightOrigin}    PRG
+${flightDestination}    MUC
