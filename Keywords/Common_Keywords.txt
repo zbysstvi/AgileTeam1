@@ -21,3 +21,20 @@ Fill Search For Flight FlightsPage
     Input Text    ${activeSetFlightField}    ${flightDestination}
     Wait Until Element Is Visible    ${firstResultFlightField}
     Click Element    ${firstResultFlightField}
+
+StartTourSearch
+    Click Element    ${tourButton}
+    Click Element    ${detailsButton}
+
+BookTour
+    Click Element    ${adultsInput}
+    Click Element    ${bookNow}
+
+FinishTourBooking
+    Click Element    ${confirmButton}
+    Wait Until Page Contains Element    ${reservedBanner}
+    Click Element    ${payButton}
+    Alert Should Be Present    ${alertText}
+    Wait Until Page Contains Element    ${reservedBanner}
+    Wait Until Page Contains Element    ${message}
+    Wait Until Element Contains    ${message}    ${messageText}

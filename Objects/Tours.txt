@@ -1,0 +1,34 @@
+*** Variables ***
+${tourButton}     xpath=/html/body/nav[1]/div/div/div/ul/li[4]/a
+${detailsButton}    xpath=//*[@id="body-section"]/div[7]/div[2]/div/table/tbody/tr[1]/td/div[2]/div/div[6]/a/button
+${tourButtonHome}    xpath=//*[@id="body-section"]/div[2]/div[2]/div/ul/li[3]/a
+${searchForm}     xpath=//*[@id="TOURS"]/form/div[2]/div[3]
+${searchButton}    xpath=//*[@id="TOURS"]/form/div[2]/div[3]/button
+${adultsInput}    xpath=//*[@id="selectedAdults"]/option[2]
+${childrenInput}    xpath=//*[@id="selectedChild"]/option[2]
+${bookNow}        xpath=/html/body/div[5]/div[2]/div[2]/div/form/div[4]/button
+${firstName}      xpath=//*[@id="guestform"]/div[1]/div/input
+${name}           John
+${lastName}       xpath=//*[@id="guestform"]/div[2]/div/input
+${name2}          Tester
+${email}          xpath=//*[@id="guestform"]/div[3]/div/input
+${em}             john.tester@gmail.com
+${confirmEmail}    xpath=//*[@id="guestform"]/div[4]/div/input
+${contactNumber}    xpath=//*[@id="guestform"]/div[6]/div/input
+${tel}            123456789
+${address}        xpath=//*[@id="guestform"]/div[7]/div/input
+${userAddress}    Testovaci12/3
+${selectCountry}    xpath=//*[@id="s2id_autogen1"]/a/span[1]
+${czechRepublic}    xpath=//*[@id="select2-drop"]/ul/li[45]
+${confirmButton}    xpath=//*[@id="body-section"]/div[2]/div/div/div[1]/div[2]/div[2]/div[4]/button
+${payButton}      xpath=//*[@id="body-section"]/div[1]/div/div[3]/center/button
+${reservedBanner}    xpath=//*[@id="body-section"]/div[1]/div/div[1]/div/center/b
+${message}        xpath=//*[@id="body-section"]/div[1]/div/div[1]/div/center/p
+${messageText}    must confirm
+${alertText}      Are you sure you want to pay at arrival?
+${guestTab}       xpath=//*[@id="guesttab"]
+${signInTab}      xpath=//*[@id="signintab"]
+${demoEmailField}    xpath=//*[@id="username"]
+${demoEmail}      user@phptravels.com
+${passwordField}    xpath=//*[@id="password"]
+${demoPassword}    demouser
