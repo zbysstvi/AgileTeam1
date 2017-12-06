@@ -30,7 +30,7 @@ Fill Search For Flight FlightsPage
     Input Text    ${activeSetFlightField}    ${flightOrigin}
     Wait Until Element Is Visible    ${firstResultFlightField}
     Click Element    ${firstResultFlightField}
-    Click Element    $(destinationFlightField)
+    Click Element    ${destinationFlightField}
     Input Text    ${activeSetFlightField}    ${flightDestination}
     Wait Until Element Is Visible    ${firstResultFlightField}
     Click Element    ${firstResultFlightField}

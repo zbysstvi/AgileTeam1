@@ -31,6 +31,7 @@ Resource          ../../Settings/Browser_Settings.txt
     Wait Until Page Contains    Search
     Fill Search For Flight FlightsPage    ${flightOrigin}    ${flightDestination}
     Click Element    ${searchFlightButton}
+    Wait Until Element Is Visible    ${bookFlightNowButton}
     Click Button    ${bookFlightNowButton}
     Page Should Contain    Booking Options
     Wait Until Element Is Visible    ${loginAsUserGuestButton}
