@@ -20,3 +20,5 @@ ${locationCar1}    xpath=//*[@id="s2id_carlocations"]/a/span[1]
 ${locationCar2}    xpath=//*[@id="s2id_carlocations2"]/a/span[1]
 ${searchCar}      xpath=//*[@id="CARS"]/form/div[2]/div[5]/button
 ${resultCar}      xpath=//*[@id="select2-drop"]/ul/li/div
+${myAcc}          xpath=(/html/body/div[3]/div/div/div[2]/ul/ul/li/a)[1]
+${signup}         xpath=(/html/body/div[3]/div/div/div[2]/ul/ul/li/ul/li/a)[2]

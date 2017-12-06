@@ -1,0 +1,13 @@
+*** Variables ***
+${goToSignUp}     http://www.phptravels.net/register
+${firstname}      name=firstname
+${lastname}       name=lastname
+${email}          name=email
+${password}       name=password
+${passwordAgain}    name=confirmpassword
+${submitBtn}      //button[@class='signupbtn btn_full btn btn-action btn-block btn-lg']
+${useMail}        test18@gmail.com
+${usePswd}        heslicko
+${usePswd2}       heslick0
+${useFirstname}    Jake
+${useLastname}    Tester
