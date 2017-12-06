@@ -1,0 +1,33 @@
+*** Variables ***
+#menu for nonregister user
+${buttonBook}	xpath=//*[@id="ROOMS"]/div/table/tbody/tr[1]/td/div[2]/div/div[5]/div[3]/button
+${firstName}	xpath=//*[@id="guestform"]/div[1]/div/input
+${lastName}	xpath=//*[@id="guestform"]/div[2]/div/input
+${email}	xpath=//*[@id="guestform"]/div[3]/div/input
+${emailConfirm}	xpath=//*[@id="guestform"]/div[4]/div/input
+${tel}	xpath=//*[@id="guestform"]/div[6]/div/input
+${address}	xpath=//*[@id="guestform"]/div[7]/div/input
+${selectCountry}	xpath=//*[@id="s2id_autogen1"]
+${textCountry}	xpath=//*[@id="select2-drop"]/div/input
+${confirmButton}	xpath=//button[@type="submit" and @name]
+${payOnArrival}	xpath=//button[@class="btn btn-default arrivalpay"]
+
+#data for nonregister user
+${fName}	Jake
+${lName}	Tester
+${emailData}	tester@gmail.com
+${mobile}	+420123456789
+${addressData}	Testovaci 12/3
+${country}	Czech republic
+
+
+#menu for register user
+${signIn}	xpath=//*[@id="signintab"]/span
+${username}	xpath=//*[@id="username"]
+${password}	xpath=//*[@id="password"]
+
+#data for register user
+${usernameData}	user@phptravels.com
+${passwordData}	demouser
+
+

@@ -1,0 +1,26 @@
+*** Variables ***
+#menu
+${hotel_menu}	http://www.phptravels.net/hotels
+${modify}	xpath=//*[@id="body-section"]/div[3]/div/div/div[6]/div/a
+${location}	xpath=//*[@id="modify"]/div/div/form/div/div/div[2]/input
+${chooseLocation}	xpath=//html/body/div[11]/ul/li/ul/li
+${check_in}	xpath=//*[@id="modify"]/div/div/form/div[2]/div/input
+${check_out}	xpath=//*[@id="modify"]/div/div/form/div[2]/div[2]/input
+${guest}	xpath=//*[@id="modify"]/div[1]/div/form/div[2]/div[3]/input
+${buttonSearch}	xpath=//button[@type="submit" and text()=" Search"]
+${buttonDetail}	xpath=//*[@id="body-section"]/div[7]/div[2]/div/table/tbody/tr/td/div[2]/div/div[5]/a/button
+
+#homepage
+${locationHome}	xpath=//div[@class="searchground"]/div/div/form/div/div/div/input
+${chooseLocationHome}	xpath=//html/body/div[16]/ul/li/ul/li
+${check_in_home}	xpath=//*[@id="dpd1"]/input
+${check_out_home}	xpath=//*[@id="dpd2"]/input
+${guestHome}	xpath=//*[@id="HOTELS"]/form/div[2]/div[3]/input
+${buttonSearchHome}	xpath=//*[@id="HOTELS"]/form/div[2]/div[4]/button
+
+#search data
+${locationData}	London
+${checkInData}	27/12/2017
+${checkOutData}	28/12/2017
+${guestData}	1
+

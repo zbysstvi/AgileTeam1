@@ -51,3 +51,60 @@ FinishTourBooking
     Wait Until Page Contains Element    ${reservedBanner}
     Wait Until Page Contains Element    ${message}
     Wait Until Element Contains    ${message}    ${messageText}
+
+Open Hotels List Page
+    Click Link    ${hotel_menu}
+
+Search Hotel On The Menu List Page
+    Click Element    ${modify}
+    Wait Until Element Is Visible    ${location}
+    Input Text    ${location}    ${locationData}
+    Wait Until Element Is Visible    ${chooseLocation}
+    Click Element    ${chooseLocation}
+    Input Text    ${check_in}    ${checkInData}
+    Input Text    ${check_out}    ${checkOutData}
+    Click Button    ${buttonSearch}
+    Click Button    ${buttonDetail}
+
+Search Hotel On The Homepage List Page
+    Wait Until Element Is Visible    ${locationHome}
+    Input Text    ${locationHome}    ${locationData}
+    Wait Until Element Is Visible    ${chooseLocationHome}
+    Click Element    ${chooseLocationHome}
+    Input Text    ${check_in_home}    ${checkInData}
+    Input Text    ${check_out_home}    ${checkOutData}
+    Click Button    ${buttonSearchHome}
+    Wait Until Element Is Visible    ${buttonDetail}
+    Click Button    ${buttonDetail}
+
+Reservation Hotel On The Menu Page For Nonregister User
+    Execute JavaScript    (window.scrollBy(250,350))
+    Wait Until Element Is Visible    ${buttonBook}
+    Click Button    ${buttonBook}
+    Input Text    ${firstName}    ${fName}
+    Input Text    ${lastName}    ${lName}
+    Input Text    ${email}    ${emailData}
+    Input Text    ${emailConfirm}    ${emailData}
+    Input Text    ${tel}    ${mobile}
+    Input Text    ${address}    ${addressData}
+    Wait Until Element Is Visible    ${selectCountry}
+    Click Element    ${selectCountry}
+    Input Text    ${textCountry}    ${country}
+    Press Key    ${textCountry}    \\13
+    Click Button    ${confirmButton}
+    Wait Until Element Is Visible    ${payOnArrival}
+    Click Button    ${payOnArrival}
+    Confirm Action
+
+Reservation Hotel On The Menu Page For Register User
+    Execute JavaScript    (window.scrollBy(250,350))
+    Wait Until Element Is Visible    ${buttonBook}
+    Click Button    ${buttonBook}
+    Click Element    ${signIn}
+    Wait Until Element Is Visible    ${username}
+    Input Text    ${username}    ${usernameData}
+    Input Password    ${password}    ${passwordData}
+    Click Button    ${confirmButton}
+    Wait Until Element Is Visible    ${payOnArrival}
+    Click Button    ${payOnArrival}
+    Confirm Action
