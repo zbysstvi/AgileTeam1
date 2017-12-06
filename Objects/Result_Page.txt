@@ -1,0 +1,4 @@
+*** Variables ***
+${wishlistTourSearch}    xpath= //*[@id="35"]
+${wishlistHotelSearch}    //*[@id="30"]
+${wishlistCarSearch}    //*[@id="9"]

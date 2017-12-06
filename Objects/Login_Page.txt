@@ -1,0 +1,4 @@
+*** Variables ***
+${enterEmail}     name=username
+${enterPassword}    name=password
+${loginButton}    xpath=(/html/body/div[4]/div[1]/div[1]/form/div[1]/div[5]/button)

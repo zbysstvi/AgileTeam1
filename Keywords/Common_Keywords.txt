@@ -11,6 +11,19 @@ Open Flights List Page
     Click Link    http://www.phptravels.net/flight
     Title Should Be    Flights List
 
+Open My Account
+    Go To    http://www.phptravels.net/account
+    Title Should Be    My Account
+
+Login
+    Go To    http://www.phptravels.net/login
+    Input Text    ${enterEmail}    ${demoLogin}
+    Input Password    ${enterPassword}    ${demoPassword}
+    Wait Until Element Is Visible    ${loginButton}
+    Double Click Element    ${loginButton}
+    Sleep    2
+    Click Element    ${home}
+
 Fill Search For Flight FlightsPage
     [Arguments]    ${flightOrigin}    ${flightDestination}
     Click Element    ${originFlightField}

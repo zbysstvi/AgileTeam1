@@ -1,0 +1,3 @@
+*** Variables ***
+${wishlist}       xpath=//*[@id="body-section"]/div/div[3]/div/div[1]/ul/li[3]/a
+${removeWishlist}    xpath=//*[@id="wishlist"]/div[1]/div/div[3]/span
