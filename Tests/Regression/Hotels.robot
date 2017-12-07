@@ -16,15 +16,6 @@ Resource          ../../Settings/Browser_Settings.txt
 2_search_hotels_homepage
     Search Hotel On The Homepage List Page
 
-3_hotel_reservation_guest
-    Open Hotels List Page
-    Search Hotel On The Menu List Page
-    Reservation Hotel On The Menu Page For Nonregister User
-
-3_hotel_reservation_user
-    Open Hotels List Page
-    Search Hotel On The Menu List Page
-    Reservation Hotel On The Menu Page For Register User
 
 
 
